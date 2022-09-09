@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
+    pathPrefix: "/portfolio_website",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
