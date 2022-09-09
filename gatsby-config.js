@@ -1,6 +1,7 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: "/deepdave0007.github.io",
   siteMetadata: {
     title: 'Deep Dave',
     description:
@@ -8,8 +9,10 @@ module.exports = {
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
-    pathPrefix: "/portfolio_website",
   },
+
+  
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
