@@ -9,15 +9,18 @@ const StyledAboutSection = styled.section`
   max-width: 900px;
 
   h2 {
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-family: "Uber Main Medium",sans-serif;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: .25rem;
+    letter-spacing: .35rem;
     }
 
   .inner {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    font-family: "Uber Text Regular",sans-serif;
+    font-size: .75rem;
+    line-height: 1.5;
+    grid-template-columns: 3fr 3fr;
     grid-gap: 50px;
 
     @media (max-width: 768px) {
@@ -39,7 +42,7 @@ const StyledText = styled.div`
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-family: var(--font-mono);
+      font-family: "Uber Text Regular",sans-serif;
       font-size: var(--fz-xs);
 
       &:before {

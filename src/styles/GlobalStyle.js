@@ -189,12 +189,12 @@ const GlobalStyle = createGlobalStyle`
 
     &:before {
       position: relative;
-      bottom: 4px;
+      bottom: -2px;
       counter-increment: section;
       content: '0' counter(section) '.';
       margin-right: 10px;
       color: var(--green);
-      font-family: var(--font-mono);
+      font-family: "Uber Text Regular",sans-serif;
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
 
