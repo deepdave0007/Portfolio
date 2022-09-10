@@ -48,15 +48,12 @@ const StyledHeroSection = styled.section`
 
     @media (max-width: 480px) {
       font-size: 2.75rem;
-      min-height: 30rem;
     }
   }
 
   h2 {
     font-family: "Uber Main Medium",sans-serif;
     font-size: 4rem;
-
- 
   }
 
   p {
