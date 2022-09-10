@@ -44,7 +44,6 @@ const StyledHeroSection = styled.section`
     margin-top: 10px;
     line-height: 1.1;
     letter-spacing: 0rem;
-    padding-bottom: 1rem;
 
     @media (max-width: 480px) {
       font-size: 2.75rem;
