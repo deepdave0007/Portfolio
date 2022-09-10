@@ -48,7 +48,7 @@ const StyledHeroSection = styled.section`
 
     @media (max-width: 480px) {
       font-size: 2.75rem;
-      min-height: 3rem;
+      min-height: 30rem;
     }
   }
 
@@ -72,11 +72,12 @@ const StyledHeroSection = styled.section`
     font-family: "Uber Text Regular",sans-serif;
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 700;
+
+    @media (max-width: 480px) {
+      font-size: .75rem;
+    }
   }
 
-  span {
-    color: white;
-  }
 `;
 
 const Hero = () => {
@@ -104,7 +105,7 @@ const Hero = () => {
   
   const three = 
   <h3 className="big-heading">
-    Deep Dave <br/>
+      Deep Dave <br/>
     <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
       & I love building great products.
     </Gradient>
