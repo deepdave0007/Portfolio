@@ -71,7 +71,7 @@ const Hero = () => {
   }, []);
 
   const one = 
-  <h1 style={{letterSpacing:`.5rem`}}>
+  <h1 style={{letterSpacing:`.25rem`}}>
     <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
       HEY, MY NAME IS
     </Gradient>
@@ -101,7 +101,7 @@ const Hero = () => {
       href="./resume.pdf"
       target="_blank"
       rel="noreferrer"
-      style={{letterSpacing: `.5rem`}}>
+      style={{letterSpacing: `.25rem`}}>
       <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
         VIEW MY RESUME
       </Gradient>
