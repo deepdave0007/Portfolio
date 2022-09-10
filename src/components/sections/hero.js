@@ -33,7 +33,7 @@ const StyledHeroSection = styled.section`
   h3 {
     font-family: "Uber Main Medium",sans-serif;
     margin-top: 10px;
-    line-height: 0.9;
+    line-height: 3;
     letter-spacing: 0.05rem;
   }
 
