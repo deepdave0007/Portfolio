@@ -21,7 +21,7 @@ const StyledHeroSection = styled.section`
   h1 {
     margin: 0 0 30px 4px;
     color: var(--green);
-    font-family: var(--font-mono);
+    font-family: "Uber Text Regular",sans-serif;
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 700;
 
@@ -31,20 +31,27 @@ const StyledHeroSection = styled.section`
   }
 
   h3 {
+    font-family: "Uber Main Medium",sans-serif;
     margin-top: 10px;
     line-height: 0.9;
-    letter-spacing: -.17rem;
+    letter-spacing: 0.05rem;
+  }
+
+  h2 {
+    font-family: "Uber Main Medium",sans-serif;
   }
 
   p {
-    margin: 20px 0 0;
-    max-width: 540px;
+    font-family: "Uber Text Regular",sans-serif;
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    margin: 40px 0 0;
+    max-width: 640px;
   }
 
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
-    border-radius: 15px;
+    margin-top: 30px;
+    font-family: "Uber Text Regular",sans-serif;
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 700;
   }
@@ -71,19 +78,19 @@ const Hero = () => {
   </h1>;
   
 
-  const two = <h2 className="big-heading">Deep Dave.</h2>;
+  const two = <h2 className="big-heading">Deep Dave,</h2>;
   
   const three = 
   <h3 className="big-heading">
     <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
-      I build great products.
+      & I build great products.
     </Gradient>
   </h3>;
 
   const four = (
     <>
       <p>
-        I’m a product-minded engineer focused on the end-to-end development of great products that drive maximum utility for users.
+        I’m a product professional with 2.5+ years of experience in building and launching products that change user's lives in both the B2C and B2B SaaS industry.
       </p>
       
     </>
@@ -94,7 +101,7 @@ const Hero = () => {
       href="./resume.pdf"
       target="_blank"
       rel="noreferrer"
-      style={{letterSpacing: `.25rem`}}>
+      style={{letterSpacing: `.5rem`}}>
       <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
         VIEW MY RESUME
       </Gradient>

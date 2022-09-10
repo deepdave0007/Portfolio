@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Deep Dave',
+    title: 'Deep Dave - Product-Manager and Engineer',
     description:
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Deep Dave is a product leader specialized in designing and launching products that add utility to people\'s lives',
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',

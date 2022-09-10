@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Uber Main Medium";
+    src: url("../fonts/Uber/UberMoveMedium.otf");
+}
+
+@font-face {
+    font-family: "Uber Main Bold";
+    src: url("../fonts/Uber/Matter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Uber Text Regular";
+    src: url("../fonts/Uber/UberMoveTextLight.otf");
+}

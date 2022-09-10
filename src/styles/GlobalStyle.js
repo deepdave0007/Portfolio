@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import fonts from './fonts';
+import "../css/typography.css";
 import variables from './variables';
 import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
@@ -76,7 +77,6 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: var(--navy);
     color: var(--slate);
-    font-family: var(--font-sans);
     font-size: var(--fz-xl);
     line-height: 1.3;
 
