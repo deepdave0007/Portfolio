@@ -108,6 +108,8 @@ const StyledLinks = styled.div`
 
       a {
         padding: 10px;
+        font-family: "Uber Text Regular",sans-serif;
+        letter-spacing: .2rem;
 
         &:before {
           content: '0' counter(item) '.';

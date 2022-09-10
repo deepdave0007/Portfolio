@@ -9,19 +9,10 @@ const IconLogo = () => (
       
           fill="currentColor"
         />
-        <polygon
-          id="Shape"
-          stroke="currentColor"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          points="39 0 0 22 0 67 39 90 78 68 78 23"
-        />
+
       </g>
     </g>
-    <text x="27" y="66" fill='currentColor' fontSize="50px">
-      D
-    </text>
+
   </svg>
 );
 

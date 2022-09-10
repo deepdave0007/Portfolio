@@ -16,13 +16,21 @@ const StyledHeroSection = styled.section`
 
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
+
+    h2{
+      font-size: 1rem;
+    }
+
+    h3{
+      font-size: 1rem;
+    }
   }
 
   h1 {
     margin: 0 0 30px 4px;
     color: var(--green);
     font-family: "Uber Text Regular",sans-serif;
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-size: .75rem;
     font-weight: 700;
 
     @media (max-width: 480px) {
@@ -32,19 +40,28 @@ const StyledHeroSection = styled.section`
 
   h3 {
     font-family: "Uber Main Medium",sans-serif;
+    font-size: 3.5rem;
     margin-top: 10px;
-    line-height: 3;
-    letter-spacing: 0.05rem;
+    line-height: 1.1;
+    letter-spacing: 0rem;
+    padding-bottom: 1rem;
+
+    @media (max-width: 480px) {
+      font-size: 2.75rem;
+    }
   }
 
   h2 {
     font-family: "Uber Main Medium",sans-serif;
+    font-size: 4rem;
+
+ 
   }
 
   p {
     font-family: "Uber Text Regular",sans-serif;
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    margin: 40px 0 0;
+    font-size: .75rem;
+    margin: 10px 0 0;
     max-width: 640px;
   }
 
@@ -54,6 +71,10 @@ const StyledHeroSection = styled.section`
     font-family: "Uber Text Regular",sans-serif;
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 700;
+  }
+
+  span {
+    color: white;
   }
 `;
 
@@ -71,19 +92,20 @@ const Hero = () => {
   }, []);
 
   const one = 
-  <h1 style={{letterSpacing:`.25rem`}}>
+  <h1 style={{letterSpacing:`.35rem`}}>
     <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
       HEY, MY NAME IS
     </Gradient>
   </h1>;
   
 
-  const two = <h2 className="big-heading">Deep Dave,</h2>;
+  const two = <h2 className="big-heading"></h2>;
   
   const three = 
   <h3 className="big-heading">
+    Deep Dave <br/>
     <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
-      & I build great products.
+      & I love building great products.
     </Gradient>
   </h3>;
 
