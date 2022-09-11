@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import Gradient from 'rgt';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -11,7 +12,6 @@ const StyledAboutSection = styled.section`
   h2 {
     font-family: "Uber Main Medium",sans-serif;
     font-size: 1.25rem;
-    font-weight: 700;
     letter-spacing: .35rem;
     }
 
@@ -158,20 +158,35 @@ const About = () => {
 
             <p>
               Fast-forward to 2022, I have graduated from Dalhousie University in Canada, worked for 
-              {' '}<a href="https:/www.haligone.com">a successful startup</a>,{' '} 
-              built {' '}<a href="https:/www.haligone.com">my own foodtech startup</a> bootstrapping it from $0 to $500k annualized GMV in just 8 months and taking it to the {' '}<a href="https:/www.ycombinator.com">YCombinator</a> semi-finals in San Francisco. 
+
+                
+                                    {' '}<a href="https:/www.haligone.com">
+                                      <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
+                                      a successful startup
+                                      </Gradient> 
+                                    </a>,{' '}
+
+                                    built
+                                    
+                                    {' '}<a href="https:/www.mealful.ca">
+                                      <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
+                                        my own consumer foodtech startup
+                                      </Gradient> 
+                                    </a>,{' '} 
+                                    
+                                    bootstrapping it from $0 to $500k annualized GMV in just 8 months and taking it to the 
+                                    
+                                    {' '}<a href="https:/www.ycombinator.com">
+                                      <Gradient dir="left-to-right" from="#83FF9E" to="#64FFDA">
+                                        YCombinator
+                                      </Gradient>
+                                    </a>,{' '}
+                                    
+                                    semi-finals in San Francisco. 
+                
             </p>
 
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I’ve also worked with in the past:</p>
           </div>
 
           <ul className="skills-list">

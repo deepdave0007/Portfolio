@@ -147,7 +147,10 @@ const mixins = {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: var(--fz-lg);
+    font-family: 'Uber Text Regular',sans-serif;
+    line-height:1.5;
+    font-size: var(--fz-sm);
+    color: #E2E2E2;
     li {
       position: relative;
       padding-left: 30px;

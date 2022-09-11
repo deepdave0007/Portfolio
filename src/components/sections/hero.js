@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
-import Gradient from 'rgt'
+import Gradient from 'rgt';
 
 
 const StyledHeroSection = styled.section`
@@ -61,6 +61,7 @@ const StyledHeroSection = styled.section`
     font-size: .75rem;
     margin: 10px 0 0;
     max-width: 640px;
+    color: #E2E2E2;
   }
 
   .email-link {

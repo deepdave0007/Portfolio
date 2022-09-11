@@ -10,6 +10,12 @@ import { usePrefersReducedMotion } from '@hooks';
 const StyledJobsSection = styled.section`
   max-width: 700px;
 
+  h2{
+    font-family: "Uber Main Medium",sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .35rem;
+  }
+
   .inner {
     display: flex;
 
@@ -76,8 +82,8 @@ const StyledTabButton = styled.button`
   border-left: 2px solid var(--lightest-navy);
   background-color: transparent;
   color: ${({ isActive }) => (isActive ? 'var(--green)' : 'var(--slate)')};
-  font-family: var(--font-mono);
-  font-size: var(--fz-xs);
+  font-family: "Uber Text Regular",sans-serif;
+  font-size: var(--fz-sm);
   text-align: left;
   white-space: nowrap;
 
@@ -150,7 +156,7 @@ const StyledTabPanel = styled.div`
     font-size: var(--fz-xxl);
     font-weight: 500;
     line-height: 1.3;
-
+    font-family: "Uber Main Medium",sans-serif;
     .company {
       color: var(--green);
     }
@@ -159,9 +165,10 @@ const StyledTabPanel = styled.div`
   .range {
     margin-bottom: 25px;
     color: var(--light-slate);
-    font-family: var(--font-mono);
+    font-family: "Uber Text Regular",sans-serif;
     font-size: var(--fz-xs);
   }
+
 `;
 
 const Jobs = () => {
@@ -244,7 +251,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">WHERE I'VE WORKED</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
@@ -296,7 +303,7 @@ const Jobs = () => {
 
                     <p className="range">{range}</p>
 
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                    <div className='text' dangerouslySetInnerHTML={{ __html: html }}/>
                   </StyledTabPanel>
                 </CSSTransition>
               );
